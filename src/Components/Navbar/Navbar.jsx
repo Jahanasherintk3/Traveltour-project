@@ -32,7 +32,7 @@ const Navbar = () => {
         </div>  
         
         <div className={active}>
-          <ul className="navlists flex"> {/*flex*/}
+          <ul className="navLists flex"> {/*flex*/}
 
             <li className="navItem"><a href="#" className="navLink">Home</a></li>
             <li className="navItem"><a href="#" className="navLink">Packages</a></li>  

@@ -13,7 +13,7 @@
     --cardBG:rgb(225,225,235);
 }
 
-.header{ 
+.header flex{ 
     position:fixed;
     display:flex;
     align-items:center;
@@ -49,19 +49,19 @@
             position:absolute;
             background:var(--whiteColorDeam);
             height:max-content;
-            width:70%;
+            width:80%;
             border-radius: 1rem;
             top:-500rem;
             left: 50%;
-            padding: 1rem;
             transform:translate(-50%);
             z-index:2000;
             box-shadow: 0 2px 4px rgba(5, 0, 0, 0.914);
-            transition: .5s ease-in-out;
+            transition: .1s ease-in-out;
+            padding: 1rem;
 
 
 
-            .navlists {
+            .navLists {
                 text-align: center;
                 flex-direction:column;
                 justify-content:center;
@@ -72,18 +72,18 @@
                 .navItem{
                     padding: .5rem 0;
 
-                        .navLink{
-                            color:var(--textColor);
-                            font-size: .9rem;
-                            font-weight: 600;
-                            &:hover{
-                                color:var(--PrimaryColor);
-                            }
+                    .navLink{
+                        color:var(--textColor);
+                        font-size: .9rem;
+                        font-weight: 600;
+                        &:hover{
+                            color:var(--PrimaryColor);
                         }
+                    }
                 }
 
                 .btn{
-                    margin-top: 3rem;
+                    margin-top: 1rem;
 
                     a{
                         font-weight:600;
@@ -112,7 +112,10 @@
     .toggleNavbar{
         .icon{
             font-size:25px;
-            color: var(--SecondaryColor);
+            color: var(--PrimaryColor);
+        }
+        &:hover.icon{
+            color:var(--SecondaryColor);
         }
     }
 

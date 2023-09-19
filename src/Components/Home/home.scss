@@ -22,7 +22,7 @@
 
     .overlay{
         position: absolute;
-        height:16% ;
+        height:100% ;
         width: 100%;
         background-color:rgb(47,100,127);
         top:0;
@@ -35,15 +35,15 @@
         position: absolute;
         height: 100%;
         width: 100%;
-        margin-top: 7.8rem;
-        bottom: 10;
+    /*margin-top: 7.8rem;*/
+        bottom: 0;
         object-fit: cover;
-        flex: auto;
+        /*flex: auto;*/
     }
     .homeContent{
         width:100% ;
         height: max-content;
-        padding: 7.5rem 1.5rem 3rem;
+        padding: 8rem 1.5rem 3rem;
         display:flex;
         row-gap:3rem ;
         flex-direction:column ;
@@ -55,30 +55,31 @@
 
         .textDiv{
             padding: 2rem 0;
-            text-align:end;
+            /*text-align:end;*/
             
             
         
             .smallText{
-                font-size: 24px;
-                position:relative;
+                font-size: 13px;
+               /* position:relative;*/
                 text-transform: uppercase;
                
             }
 
             .homeTitle{
                 position: relative;
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
 
         .cardDiv{
             position: relative;
-            padding: 3rem 1 rem;
+            padding: 3rem 1rem;
             background-color:rgb(183, 213, 239);
             border-radius: 5px;
-            gap:1rem;
+            gap:1px;
             align-items:center;
+            height: 400px;
             
             label{
                 display: block;
@@ -88,7 +89,7 @@
                 font-weight: 500;
             }
 
-            .label_total{
+            .label_total flex{
                 justify-content: space-between;
                 align-items: center;
 
@@ -133,7 +134,7 @@
                 position: absolute;
                 background: rgba(85, 133, 85, 0.87);
                 width:max-content;
-                bottom: .3em;
+                bottom: 1rem;
                 column-gap:.8rem;
                 padding: 5px 1rem;
                 border-radius: 3rem;
@@ -147,7 +148,7 @@
                 }
 
                 .icon{
-                    font-size: 15px;
+                    font-size: 18px;
                   
                 }
                 span{
