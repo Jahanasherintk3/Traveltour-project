@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./main.css";
 
 import { HiOutlineLocationMarker } from "react-icons/hi";
@@ -11,6 +11,10 @@ import pic5 from "../../Assets/pic5.jpg";
 import pic6 from "../../Assets/pic6.jpg";
 import pic7 from "../../Assets/pic7.jpg";
 import pic8 from "../../Assets/pic8.jpg";
+
+import Aos, { init } from "aos";
+import 'aos/dist/aos.css'
+
 
 const Data = [
   {
@@ -95,10 +99,14 @@ const Data = [
 ];
 
 const Main = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+},[])
+
   return (
     <section className="main container section">
       <div className="secTitle">
-        <h3 className="title">Most visited destinations</h3>
+        <h3 data-aos="fade-right" className="title">Most visited destinations</h3>
       </div>
       <div className="secContent grid">
         {/*here,higher order array method are using*/}
@@ -106,7 +114,9 @@ const Main = () => {
         {Data?.map(
           ({ id, imgSrc, destTitle, location, grade, fees, description }) => {
             return (
-              <div key={id} className="singleDestination">
+              <div key={id}
+              data-aos="fade-up"
+               className="singleDestination">
                 {/*here it will return single id from map array*/}
 
                 <div className="imageDiv">
