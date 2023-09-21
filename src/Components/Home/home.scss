@@ -79,7 +79,7 @@
             border-radius: 5px;
             gap:1px;
             align-items:center;
-            height: 400px;
+            height: 250px;
             
             label{
                 display: block;
@@ -215,6 +215,41 @@
             .cardDiv{
                 padding: 2rem 1rem;
                 grid-template-columns:repeat(3,1fr)
+            }
+        }
+    }
+}
+
+@media screen and (min-width:940px){
+    .home{
+        height: 85vh;
+    }
+}
+
+@media screen and (min-width:1240px){
+    .home{
+        height: 99vh;
+
+        .homeContent{
+            padding-left: 0;
+            padding-right: 0;
+
+            .cardDiv{
+                padding: 2rem 1rem;
+                grid-template-columns: repeat(3,1fr);
+
+                .input{
+                    margin-bottom: 1rem;
+                }
+
+                .searchOptions{
+                    bottom: -1rem;
+                    padding: 8px 1rem;
+
+                    span{
+                        font-size: 17px;
+                    }
+                }
             }
         }
     }
