@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import './footer.css'
+import './footer.scss'
 import video2 from '../../Assets/video2.mp4'
 import {FiSend} from 'react-icons/fi'
 import {MdOutlineTravelExplore} from 'react-icons/md'
@@ -24,7 +24,7 @@ const Footer = () => {
         <video src={video2} loop autoPlay muted type="video/mp4"></video>
       </div>
 
-      <div className='secContinent container'>
+      <div className='secContent container'>
         <div className='contactDiv flex'>
           <div  data-aos="fade-up" className='text'>
             <small>KEEP IN TOUCH</small>
@@ -34,7 +34,7 @@ const Footer = () => {
           <div className='inputDiv flex'>
             <input type="text" placeholder="Enter Email Address"></input>
             <button  data-aos="fade-up" className='btn flex' type='submit'>
-              Send<FiSend className="icon"/>
+              SEND<FiSend className="icon"/>
             </button>
           </div>
         </div>
@@ -47,12 +47,13 @@ const Footer = () => {
                     Travel.</a>
                 </div>
                 <div  data-aos="fade-up" className='footerParagraph'>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, nulla?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam fuga consectetur facilis placeat? Ullam, 
-                    atque accusamus maiores totam, ipsum modi minus provident eum laboriosam blanditiis, dolorum necessitatibus
-                     laudantium possimus quasi neque magni repudiandae cupiditate et distinctio dicta. Fuga rerum accusamus omnis 
-                     voluptatum voluptate maiores facilis, blanditiis reprehenderit dignissimos laudantium aperiam impedit quasi 
-                     maxime doloribus praesentium id nesciunt, alias numquam.
+                Travel is one of the largest online travel agencies.
+                 It is headquartered in Amsterdam, and is a subsidiary of Booking Holdings.
+                 In 2022, the company's mobile app was the most downloaded mobile app in the travel agency category.
+                 As of December 31, 2022, Travel offered lodging reservation services for approximately
+                  2.7 million properties, including 400,000 hotels, motels, and resorts and 2.3 million homes, 
+                  apartments in over 220 countries and in over 40 languages. It also offers flights in 54 markets
+                   and tours and activities in more than 1,200 cities.
                      
                 </div>
 

@@ -6,19 +6,19 @@
     --whiteColor: hsl(0,0%,100%);
     --blackColor:hsl(201,33%,16%);
     --textColor:hsl(240,4%,36%);
-    --whiteColorDeam:hsl(0,0%,93%);
+    --whiteColorDeam:rgba(237, 237, 237, 0.77);
     --greyText:rgb(190,190,190);
     --inputColor:rgb(239,239,239);
     --bodyColor:rgb(240,240,246);
     --cardBG:rgb(225,225,235);
 }
 
-.header flex{ 
+.header{ 
     position:fixed;
     display:flex;
     align-items:center;
     justify-content:space-between;
-    background:var(--whiteColorDeam);
+    background-color:rgb(57, 109, 132);
     width: 100%;
     padding: 1rem;
     z-index: 1000;
@@ -47,7 +47,7 @@
         }
         .navBar{
             position:absolute;
-            background:var(--whiteColorDeam);
+            background-color:var(--whiteColorDeam);
             height:max-content;
             width:80%;
             border-radius: 1rem;
@@ -68,6 +68,7 @@
                 width: 100%;
                 margin: auto;
                 padding: .5rem 0;
+                background-color:rgb(212, 220, 224); 
 
                 .navItem{
                     padding: .5rem 0;

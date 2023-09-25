@@ -20,6 +20,7 @@
     justify-content: center;
     margin: auto;
 
+
     .overlay{
         position: absolute;
         height:100% ;
@@ -38,6 +39,7 @@
     /*margin-top: 7.8rem;*/
         bottom: 0;
         object-fit: cover;
+        top: 0;
         /*flex: auto;*/
     }
     .homeContent{
@@ -52,16 +54,17 @@
         margin: auto;
         color: var(--whiteColor);
         z-index: 100;
+       
 
         .textDiv{
             padding: 2rem 0;
-            /*text-align:end;*/
+           
             
             
         
             .smallText{
                 font-size: 13px;
-               /* position:relative;*/
+                position:relative;
                 text-transform: uppercase;
                
             }
@@ -74,36 +77,42 @@
 
         .cardDiv{
             position: relative;
-            padding: 3rem 1rem;
+            padding: 2rem 1rem;
             background-color:rgb(183, 213, 239);
-            border-radius: 5px;
+            border-radius: 10px;
             gap:1px;
-            align-items:center;
-            height: 250px;
+           // align-items:center;
+            //height: 250px;
+     
             
             label{
                 display: block;
                 color: var(--textColor);
                 padding-bottom: 10px;
-                font-size: 24px;
+                font-size: 23px;
                 font-weight: 500;
+                
+            
             }
-
             .label_total flex{
                 justify-content: space-between;
                 align-items: center;
+                padding-bottom:10px;
 
                 .total{
                     color:var(--textColor);
                     font-size: 18px;
-                    padding-bottom: 10px;
+                   // padding-bottom:10px;
+                   // justify-content: space-between;
+                    
                 }
             }
+        
             .input{
                 height: 40px;
-                padding: 0 1 rem;
-                background: var(--inputColor);
-                border-radius: 3rem;
+                padding: 0 2rem;
+                background-color:rgba(196, 190, 190, 0.577);
+                border-radius: 2.5rem;
 
 
                 input{

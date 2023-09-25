@@ -1,5 +1,5 @@
 import React,{useEffect} from "react";
-import "./home.css";
+//import "./home.css";
 import "./home.scss";
 import video from "../../Assets/video.mp4";
 import { GrLocation } from "react-icons/gr";
@@ -31,10 +31,11 @@ const Home = () => {
      
       <br />
       <div  data-aos="fade-up" className="cardDiv grid">
+        
         <div className="destinationInput">
           <label htmlFor="city">Search your destination:</label>
           <div className="input flex">
-            <input type="text" placeholder="Enter name here..."></input>
+            <input type="text" placeholder="Enter name here..." className="input"></input>
             <GrLocation className="icon" />
           </div>
         </div>
@@ -44,8 +45,7 @@ const Home = () => {
         <div className="dateInput">
           <label htmlFor="date">Select your date</label>
             <div className="input flex">
-              <input type="date" placeholder="Enter name here..."></input>
-              <GrLocation className="icon" />
+              <input type="date"></input>
             </div>
         </div>
      
