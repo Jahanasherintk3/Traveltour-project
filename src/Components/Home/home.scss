@@ -81,12 +81,12 @@
             background-color:rgb(183, 213, 239);
             border-radius: 10px;
             gap:1px;
-           // align-items:center;
+            align-items:center;
             //height: 250px;
      
             
-            label{
-                display: block;
+            .label{
+                display: flex;
                 color: var(--textColor);
                 padding-bottom: 10px;
                 font-size: 23px;
@@ -94,16 +94,16 @@
                 
             
             }
-            .label_total flex{
+            .label_total {
+                width: 100%;
                 justify-content: space-between;
                 align-items: center;
-                padding-bottom:10px;
 
                 .total{
                     color:var(--textColor);
                     font-size: 18px;
-                   // padding-bottom:10px;
-                   // justify-content: space-between;
+                    padding-bottom:10px;
+                    justify-content: space-between;
                     
                 }
             }
@@ -180,6 +180,10 @@
                     color:var(--PrimaryColor);
                 }
             }
+        }
+
+        .priceInput{
+            margin-bottom: 12px;
         }
         
     }

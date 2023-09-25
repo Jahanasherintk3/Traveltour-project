@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React,{useEffect,useState} from "react";
 //import "./home.css";
 import "./home.scss";
 import video from "../../Assets/video.mp4";
@@ -14,6 +14,8 @@ import Aos, { init } from "aos";
 import 'aos/dist/aos.css'
 
 const Home = () => {
+
+  const[data,setData]=useState(1000)
 
   useEffect(()=>{
       Aos.init({duration:2000})
@@ -31,7 +33,7 @@ const Home = () => {
      
       <br />
       <div  data-aos="fade-up" className="cardDiv grid">
-        
+
         <div className="destinationInput">
           <label htmlFor="city">Search your destination:</label>
           <div className="input flex">
@@ -52,10 +54,10 @@ const Home = () => {
         <div className="priceInput">
           <div className="label_total flex">
             <label htmlFor="price">Max price:</label>
-            <h3 className="total">$5000</h3>
+            <h3 className="total">${data}</h3>
           </div>
             <div className="input flex">
-              <input type="range" max="5000" min="1000"></input>
+              <input type="range" max="30000" min="1000" step="500" value={data} onChange={(e)=>setData(e.target.value)}></input>
             </div>
         </div>
 
